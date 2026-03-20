@@ -84,11 +84,11 @@ MaxStartups 3:50:10
 # Session Management
 ################################################################################
 
-# Keep-alive interval (seconds) - detects broken connections
-ClientAliveInterval 300
+# Keep-alive interval (seconds) - prevents Railway TCP proxy idle timeout
+ClientAliveInterval 30
 
 # Keep-alive retries before disconnect
-ClientAliveCountMax 2
+ClientAliveCountMax 3
 
 ################################################################################
 # Feature Controls
